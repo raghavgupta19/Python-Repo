@@ -109,6 +109,3 @@ Fare: ₹20
 
 ---
 
-## ⚠️ Disclaimer
-
-This project is for academic and learning purposes only.
