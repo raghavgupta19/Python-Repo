@@ -9,7 +9,7 @@ It follows a **clear ETL pipeline**:
 - Derived summary & analytics tables
 - SQL-based insights
 
-This project is designed to be **DBMS / Data Warehousing viva-ready**.
+ **DBMS / Data Warehousing**.
 
 ---
 
@@ -142,11 +142,8 @@ python load_match_results.py
 
 > **⬇️ PLACEHOLDER FOR SCHEMA IMAGE ⬇️**
 
-```
-![Schema Image](CricbuzzDB/scraper/Schema.png)
-```
 
-*(Generated separately and attached in documentation)*
+![Schema Image](scraper/Schema.png)
 
 ---
 
@@ -212,4 +209,4 @@ Perfect for:
 
 ---
 
-⭐ *If you understand this project, you understand Data Warehousing.*
+⭐ *This application is a practical demonstration of Data Warehousing concept.*
