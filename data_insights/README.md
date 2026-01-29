@@ -55,3 +55,17 @@ source venv/bin/activate
 
 # Install dependencies
 pip install requests pandas
+
+run:- main.py
+
+## 🖥️ Execution & Results
+
+### Terminal Output
+Below is a screenshot of the pipeline successfully executing the ETL process and displaying the 5 business insights:
+
+![Terminal Execution Output](TerminalOutput.png)
+
+### Data Quality Evidence
+The screenshot above confirms that the **Data Integrity Audit** passed with 0 invalid records, proving the Python validation logic is effective.
+
+
