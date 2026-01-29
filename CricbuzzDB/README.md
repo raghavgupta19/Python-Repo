@@ -123,60 +123,60 @@ python load_match_results.py
 
 ---
 ## data flow chart
-┌───────────────────────────┐
-│   CricBuzz Match Pages    │
-│  (HTML / CSV per Match)   │
-└─────────────┬─────────────┘
+-┌───────────────────────────┐
+-│   CricBuzz Match Pages    │
+-│  (HTML / CSV per Match)   │
+-└─────────────┬─────────────┘
               │
               ▼
-┌───────────────────────────┐
-│   Raw Match CSV Files     │
-│ (batting, bowling, info) │
-│   /matches/<match_id>/   │
-└─────────────┬─────────────┘
-              │
+-┌───────────────────────────┐
+-│   Raw Match CSV Files     │
+-│ (batting, bowling, info) │
+-│   /matches/<match_id>/   │
+-└─────────────┬─────────────┘
+  -            │
               ▼
-┌───────────────────────────────────┐
-│        Python ETL Layer            │
-│                                   │
-│  db_setup.py      → schema setup  │
-│  load_players.py  → players,teams │
-│  load_matches.py  → match metadata│
-│  load_scorecards.py → stats load  │
-│  load_match_results.py → outcomes │
-└─────────────┬─────────────────────┘
-              │
+-┌───────────────────────────────────┐
+-│        Python ETL Layer            │
+-│                                   │
+-│  db_setup.py      → schema setup  │
+-│  load_players.py  → players,teams │
+-│  load_matches.py  → match metadata│
+-│  load_scorecards.py → stats load  │
+-│  load_match_results.py → outcomes │
+-└─────────────┬─────────────────────┘
+-          │
               ▼
-┌───────────────────────────┐
-│   SQLite Data Warehouse   │
-│        cricket.db         │
-│                           │
-│  • teams                  │
-│  • players                │
-│  • matches                │
-│  • batting_scorecard      │
-│  • bowling_scorecard      │
-│  • match_results          │
-└─────────────┬─────────────┘
-              │
+-┌───────────────────────────┐
+-│   SQLite Data Warehouse   │
+-│        cricket.db         │
+-│                           │
+-│  • teams                  │
+-│  • players                │
+-│  • matches                │
+-│  • batting_scorecard      │
+-│  • bowling_scorecard      │
+-│  • match_results          │
+-└─────────────┬─────────────┘
+  -            │
               ▼
-┌───────────────────────────┐
-│ Derived Tables / Views    │
-│                           │
-│ • batting_summary         │
-│ • bowling_summary         │
-│ • player milestones       │
-│ • player_of_match_count   │
-└─────────────┬─────────────┘
-              │
+-┌───────────────────────────┐
+-│ Derived Tables / Views    │
+-│                           │
+-│ • batting_summary         │
+-│ • bowling_summary         │
+-│ • player milestones       │
+-│ • player_of_match_count   │
+-└─────────────┬─────────────┘
+  -            │
               ▼
-┌───────────────────────────┐
-│     SQL Analytics Layer   │
-│                           │
-│ • Top scorers             │
-│ • Match-wise performance  │
-│ • Player achievements     │
-└───────────────────────────┘
+-┌───────────────────────────┐
+-│     SQL Analytics Layer   │
+-│                           │
+-│ • Top scorers             │
+-│ • Match-wise performance  │
+-│ • Player achievements     │
+-└───────────────────────────┘
 
 ## 🧮 Database Schema
 
