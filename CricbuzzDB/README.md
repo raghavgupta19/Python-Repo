@@ -204,7 +204,7 @@ Perfect for:
 
 
 ## 🙌 Team Members
-**Raghav Gupta**
+**Raghav Gupta &**
 **Shreya Pandey**
 
 ---
