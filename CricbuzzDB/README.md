@@ -143,7 +143,7 @@ python load_match_results.py
 > **⬇️ PLACEHOLDER FOR SCHEMA IMAGE ⬇️**
 
 ```
-[ INSERT BLACK & WHITE PK–FK SCHEMA IMAGE HERE ]
+![Schema Image](CricbuzzDB/scraper/Schema.png)
 ```
 
 *(Generated separately and attached in documentation)*
@@ -204,16 +204,11 @@ Perfect for:
 - SQL Analytics Demonstration
 - ETL Pipeline Explanation
 
----
 
-## 📎 Notes
-- CSV files and database are ignored via `.gitignore`
-- Each project version maintained as a separate Git branch
 
----
-
-## 🙌 Author
+## 🙌 Team Members
 **Raghav Gupta**
+**Shreya Pandey**
 
 ---
 
