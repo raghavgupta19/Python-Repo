@@ -123,7 +123,7 @@ python load_match_results.py
 
 ---
 ## data flow chart
-![Data_flow Image](scraper/Data_flow.png)
+![Data_Flow Image](scraper/Data_Flow.png)
 ## 🧮 Database Schema
 
 ### Core Tables
